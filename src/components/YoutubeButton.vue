@@ -2,13 +2,13 @@
   <a
     :href="href"
     target="_blank"
-    class="px-3 py-2 rounded border-red-600 text-white border-2 bg-red-500 hover:bg-red-600 hover:text-white transition-colors"
+    class="inline-flex items-center px-4 py-2 rounded-full bg-spice text-white hover:bg-spice-dark transition-colors duration-300 shadow-sm hover:shadow-md"
   >
     <slot></slot>
   </a>
 </template>
 
-<script setup>  
+<script setup>
 const props = defineProps({
   href: String,
 });
