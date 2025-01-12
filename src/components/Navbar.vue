@@ -1,11 +1,11 @@
 <template>
-  <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+  <header class="bg-sage-50 shadow-soft fixed w-full top-0 z-50">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between h-16">
         <!-- Logo -->
         <router-link
           :to="{ name: 'home' }"
-          class="flex items-center gap-2 text-primary-600 font-semibold text-xl hover:text-primary-700 transition-colors"
+          class="flex items-center gap-2 text-herb-dark font-semibold text-xl hover:text-herb transition-colors"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
@@ -19,8 +19,8 @@
             v-for="(item, index) in navigationItems"
             :key="index"
             :to="item.to"
-            class="px-4 py-2 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-primary-600 transition-all"
-            :class="{ 'bg-primary-50 text-primary-600': isCurrentRoute(item.to.name) }"
+            class="px-4 py-2 rounded-md text-sm font-medium text-sage-700 hover:bg-herb-light hover:text-herb-dark transition-all"
+            :class="{ 'bg-herb-light text-herb-dark': isCurrentRoute(item.to.name) }"
           >
             {{ item.text }}
           </router-link>

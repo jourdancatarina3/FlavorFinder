@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white rounded-xl shadow-card transform hover:scale-[1.02] transition-all duration-300">
+  <div class="bg-sage-50 rounded-xl shadow-card transform hover:scale-[1.02] transition-all duration-300">
     <router-link :to="{ name: 'mealDetails', params: { id: meal.idMeal } }">
       <div class="relative overflow-hidden rounded-t-xl group">
         <img
@@ -11,12 +11,12 @@
       </div>
     </router-link>
     <div class="p-5">
-      <h3 class="font-bold text-xl text-gray-800 mb-2 line-clamp-1">{{ meal.strMeal }}</h3>
+      <h3 class="font-bold text-xl text-sage-800 mb-2 line-clamp-1">{{ meal.strMeal }}</h3>
       <div class="flex items-center gap-2 mb-3">
-        <span class="px-2 py-1 bg-culinary-light text-culinary-dark text-sm rounded-full">
+        <span class="px-2 py-1 bg-herb-light text-herb-dark text-sm rounded-full">
           {{ meal.strCategory || 'Main Course' }}
         </span>
-        <span class="px-2 py-1 bg-spice-light text-spice-dark text-sm rounded-full">
+        <span class="px-2 py-1 bg-tomato-light text-tomato-dark text-sm rounded-full">
           {{ meal.strArea || 'International' }}
         </span>
       </div>

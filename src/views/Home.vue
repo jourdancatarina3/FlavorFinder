@@ -3,7 +3,7 @@
     <h1 class="text-4xl font-bold my-5">Categories:</h1>
     <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
       <div v-for="category in categories" :key="category.idCategory">
-        <div class="shadow-lg cursor-pointer rounded-lg">
+        <div class="shadow-lg bg-gray-100 cursor-pointer rounded-lg">
           <router-link :to="{ name: 'byName', params: { name: category.strCategory } }">
             <img
               class="rounded-t-xl w-full h-72 object-cover"
